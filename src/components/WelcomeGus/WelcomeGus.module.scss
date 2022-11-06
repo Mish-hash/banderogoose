@@ -1,0 +1,59 @@
+.firstElipse {
+    display: flex;
+    width: 320px;
+    height: 320px;
+    margin: 246px auto 0 auto;
+    background-color: #B3DAFF;
+    border-radius: 50%;
+
+    .secondElipse {
+        display: flex;
+        width: 220px;
+        height: 220px;
+        margin: 50px auto 50px auto;
+        background-color: #A3D1FB;
+        border-radius: 50%;
+
+        .thirdElipse {
+            display: flex;
+            width: 120px;
+            height: 120px;
+            margin: 50px auto 50px auto;
+            background-color: #8CC8FF;
+            border-radius: 50%;
+        }
+    }
+}
+
+.bird {
+    margin: -314px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+
+    img {
+        width: 267px;
+    }
+    .text {
+        margin-left: 65px;
+        margin-top: -45px;
+        background-image: url('../img/vector1112.png');
+        background-repeat: no-repeat;
+        padding-top: 60px;
+        //padding-left: 20px;
+        width: 200px;
+        height: 140px;
+        font-family: 'Roboto', sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: left;
+
+        p {
+            width: 150px;
+            height: 40px;
+            margin-left: 20px;
+        }
+    }
+}
