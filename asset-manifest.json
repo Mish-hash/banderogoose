@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/banderogoose/static/css/main.0f30a1bf.css",
+    "main.js": "/banderogoose/static/js/main.2dbe72d7.js",
+    "static/js/787.ddb0fc3e.chunk.js": "/banderogoose/static/js/787.ddb0fc3e.chunk.js",
+    "index.html": "/banderogoose/index.html",
+    "main.0f30a1bf.css.map": "/banderogoose/static/css/main.0f30a1bf.css.map",
+    "main.2dbe72d7.js.map": "/banderogoose/static/js/main.2dbe72d7.js.map",
+    "787.ddb0fc3e.chunk.js.map": "/banderogoose/static/js/787.ddb0fc3e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0f30a1bf.css",
+    "static/js/main.2dbe72d7.js"
+  ]
+}
