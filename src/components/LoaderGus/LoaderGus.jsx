@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './WelcomeGus.module.scss';
+import styles from './LoaderGus.module.scss';
 import gus from '../img/gus.png';
 
-function WelcomeGus(props) {
+function LoaderGus(props) {
     return(
         <React.Fragment>
             <div className={styles.firstElipse}>
@@ -12,7 +12,7 @@ function WelcomeGus(props) {
                 </div>
             </div>
             <div className={styles.bird}>
-                <img src={gus} alt="gus" />
+                <img src={gus} className={styles.img_gus} alt="gus" />
                 <div className={styles.text}>
                     <p>Бандерогусь — <br/> за сраку орків кусь</p>
                 </div>
@@ -21,4 +21,4 @@ function WelcomeGus(props) {
     );
 }
 
-export default WelcomeGus;
+export default LoaderGus;

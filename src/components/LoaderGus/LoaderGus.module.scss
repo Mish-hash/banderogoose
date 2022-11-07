@@ -30,17 +30,39 @@
     display: flex;
     flex-direction: column;
     padding-top: 20px;
+    position: relative;
 
-    img {
+    .img_gus {
+        position: absolute;
         width: 267px;
+        left: -130px;
+        animation-name: animation-gus;
+        animation-duration: 700ms;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-direction: alternate-reverse;
+        animation-delay: 350ms;
     }
+
+    @keyframes animation-gus {
+        0%{
+            width: 220px;
+            left: -105px;
+        }
+        50%{
+            width: 267px;
+            left: -135px;
+        }
+        100%{
+            width: 300px;
+            left: -145px;
+        }
+    }
+
     .text {
-        margin-left: 65px;
-        margin-top: -45px;
         background-image: url('../img/vector1112.png');
         background-repeat: no-repeat;
         padding-top: 60px;
-        //padding-left: 20px;
         width: 200px;
         height: 140px;
         font-family: 'Roboto', sans-serif;
@@ -49,6 +71,9 @@
         font-size: 16px;
         line-height: 20px;
         text-align: left;
+        position: absolute;
+        top: 145px;
+        left: -70px;
 
         p {
             width: 150px;
