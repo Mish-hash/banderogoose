@@ -1,10 +1,12 @@
 import styles from './Goose.module.scss';
-import LoaderGus from './LoaderGus/LoaderGus';
+import LoaderGoose from './LoaderGoose/LoaderGoose';
+import StartGoose from './StartGoose/StartGoose';
 
 function Goose () {
     return (
         <div className={styles.container}>
-            <LoaderGus/>
+            {/* <LoaderGoose/> */}
+            <StartGoose/>
         </div>
     );
 }

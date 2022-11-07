@@ -1,30 +1,3 @@
-.firstElipse {
-    display: flex;
-    width: 320px;
-    height: 320px;
-    margin: 246px auto 0 auto;
-    background-color: #B3DAFF;
-    border-radius: 50%;
-
-    .secondElipse {
-        display: flex;
-        width: 220px;
-        height: 220px;
-        margin: 50px auto 50px auto;
-        background-color: #A3D1FB;
-        border-radius: 50%;
-
-        .thirdElipse {
-            display: flex;
-            width: 120px;
-            height: 120px;
-            margin: 50px auto 50px auto;
-            background-color: #8CC8FF;
-            border-radius: 50%;
-        }
-    }
-}
-
 .bird {
     margin: -314px auto 0 auto;
     display: flex;
@@ -60,7 +33,7 @@
     }
 
     .text {
-        background-image: url('../img/vector1112.png');
+        background-image: url('../img/vector1112.webp');
         background-repeat: no-repeat;
         padding-top: 60px;
         width: 200px;
