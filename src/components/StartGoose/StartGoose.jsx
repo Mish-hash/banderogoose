@@ -1,8 +1,9 @@
 import React from "react";
-import Circle from "../UI/Circle";
+import Circle from "../UI/Circle/Circle";
 import styles from './StartGoose.module.scss';
 import goose from '../img/startGus.webp';
 import { welcomeDialogTexts } from '../../data/data';
+import Button from "../UI/Button/Button";
 
 function StartGoose() {
 
@@ -20,7 +21,8 @@ function StartGoose() {
                     <p>{welcome}</p>
                 </div>
             </div>
-            <button className={styles.button_start}>Обрати позицію</button>
+            {/* <button className={styles.button_start}>Обрати позицію</button> */}
+            <Button className={styles.button_start}>Обрати позицію</Button>
             
         </div>
     );

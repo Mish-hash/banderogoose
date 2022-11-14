@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './LoaderGoose.module.scss';
 import goose from '../img/gus.webp';
-import Circle from '../UI/Circle';
+import Circle from '../UI/Circle/Circle';
 
 function LoaderGoose(props) {
 
