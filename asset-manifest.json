@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/banderogoose/static/css/main.7863619b.css",
-    "main.js": "/banderogoose/static/js/main.2f5a8e56.js",
+    "main.css": "/banderogoose/static/css/main.c18c4cdf.css",
+    "main.js": "/banderogoose/static/js/main.a2a8bff3.js",
     "static/js/787.ddb0fc3e.chunk.js": "/banderogoose/static/js/787.ddb0fc3e.chunk.js",
     "static/media/startGus.webp": "/banderogoose/static/media/startGus.71fb52b2ba6be3df33ff.webp",
     "static/media/startVector.webp": "/banderogoose/static/media/startVector.d9b0ebc8dd9a363106ac.webp",
     "static/media/gus.webp": "/banderogoose/static/media/gus.54c2da1127c7902540bc.webp",
     "static/media/vector1112.webp": "/banderogoose/static/media/vector1112.193a52ec8a349ae93816.webp",
     "index.html": "/banderogoose/index.html",
-    "main.7863619b.css.map": "/banderogoose/static/css/main.7863619b.css.map",
-    "main.2f5a8e56.js.map": "/banderogoose/static/js/main.2f5a8e56.js.map",
+    "main.c18c4cdf.css.map": "/banderogoose/static/css/main.c18c4cdf.css.map",
+    "main.a2a8bff3.js.map": "/banderogoose/static/js/main.a2a8bff3.js.map",
     "787.ddb0fc3e.chunk.js.map": "/banderogoose/static/js/787.ddb0fc3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7863619b.css",
-    "static/js/main.2f5a8e56.js"
+    "static/css/main.c18c4cdf.css",
+    "static/js/main.a2a8bff3.js"
   ]
 }
