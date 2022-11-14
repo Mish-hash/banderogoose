@@ -1,10 +1,13 @@
 .firstElipse {
+    position: absolute;
+    top: 246px;
     display: flex;
     width: 320px;
     height: 320px;
-    margin: 246px auto 0 auto;
+    margin: 0 auto;
     background-color: #B3DAFF;
     border-radius: 50%;
+    //z-index: 2;
 
     .secondElipse {
         display: flex;

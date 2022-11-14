@@ -6,7 +6,7 @@ import Circle from '../UI/Circle';
 function LoaderGoose(props) {
 
     return(
-        <React.Fragment>
+        <div className={styles.container}>
             <Circle/>
             <div className={styles.bird}>
                 <img src={goose} className={styles.img_gus} alt="gus" />
@@ -14,7 +14,7 @@ function LoaderGoose(props) {
                     <p>Бандерогусь — <br/> за сраку орків кусь</p>
                 </div>
             </div>
-        </React.Fragment>
+        </div>
     );
 }
 

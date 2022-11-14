@@ -5,8 +5,8 @@ import StartGoose from './StartGoose/StartGoose';
 function Goose () {
     return (
         <div className={styles.container}>
-            {/* <LoaderGoose/> */}
-            <StartGoose/>
+            <LoaderGoose/>
+            {/* <StartGoose/> */}
         </div>
     );
 }

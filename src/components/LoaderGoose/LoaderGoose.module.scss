@@ -1,34 +1,49 @@
-.bird {
-    margin: -314px auto 0 auto;
+.container {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    padding-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bird {
+    display: flex;
+    flex-direction: column;
+    padding-top: 252px;
     position: relative;
 
     .img_gus {
-        position: absolute;
-        width: 267px;
-        left: -130px;
         animation-name: animation-gus;
-        animation-duration: 700ms;
+        animation-duration: 800ms;
         animation-timing-function: linear;
         animation-iteration-count: infinite;
-        animation-direction: alternate-reverse;
-        animation-delay: 350ms;
+        position: absolute;
     }
 
     @keyframes animation-gus {
         0%{
-            width: 220px;
-            left: -105px;
-        }
-        50%{
             width: 267px;
-            left: -135px;
+            height: 172px;
+            top: 280px;
+            left: -35px;
+        }
+        33%{
+            width: 176px;
+            height: 113px;
+            top: 310px;
+            left: 13px;
+        }
+        66%{
+            width: 308px;
+            height: 216px;
+            top: 258px;
+            left: -59px;
         }
         100%{
-            width: 300px;
-            left: -145px;
+            width: 267px;
+            height: 172px;
+            top: 280px;
+            left: -35px;
         }
     }
 
@@ -44,9 +59,9 @@
         font-size: 16px;
         line-height: 20px;
         text-align: left;
-        position: absolute;
-        top: 145px;
-        left: -70px;
+        position: relative;
+        top: 155px;
+        left: 30px;
 
         p {
             width: 150px;
