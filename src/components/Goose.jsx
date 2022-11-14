@@ -2,6 +2,7 @@ import { useState } from 'react';
 import styles from './Goose.module.scss';
 import LoaderGoose from './LoaderGoose/LoaderGoose';
 import StartGoose from './StartGoose/StartGoose';
+import SelectTarget from './SelectTarget/SelectTarget';
 
 function Goose () {
     const [isLoad, setIsLoad] = useState(true);
@@ -11,7 +12,8 @@ function Goose () {
 
     return (
         <div className={styles.container}>
-            {isLoad ? <LoaderGoose/> : <StartGoose/>}
+            {/* {isLoad ? <LoaderGoose/> : <StartGoose/>} */}
+            <SelectTarget/>
         </div>
     );
 }
