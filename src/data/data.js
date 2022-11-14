@@ -3,6 +3,12 @@ import chrikIcon from '../components/img/targets/chrikIcon.webp';
 import mackwaIcon from '../components/img/targets/mackwaIcon.webp';
 import rublIcon from '../components/img/targets/rublIcon.webp';
 
+import warBunker from '../components/img/war/bunker_war.webp';
+import warChrik from '../components/img/war/chrik_war.webp';
+import warMackwa from '../components/img/war/mackwa_war.webp';
+import warRubl from '../components/img/war/rubl_war.webp';
+
+
 export const welcomeDialogTexts = [
     'Усі системи мегаактивовані. Очікую на команду!',
     'Готовий фарширувати!',
@@ -41,7 +47,37 @@ export const selectTargetData = {
     button: 'Запустити гуся',
 };
 
+export const targetResultData = {
+    headerText: 'Слава Україні',
+    descriptionText: 'Ваш гусак успішно запущений',
+    button: 'Переглянути карту',
+    targets: [
+        {
+            id: 1,
+            name: 'moscov',
+            img: warMackwa,
+        },
+        {
+            id: 2,
+            name: 'bunker',
+            img: warBunker,
+        },
+        {
+            id: 3,
+            name: 'lukashenko',
+            img: warChrik,
+        },
+        {
+            id: 4,
+            name: 'rur',
+            img: warRubl,
+        },
+    ],
+    text: 'Очікуйте гучного «свєрх-тратата» по позиції найближчим часом',
+}
+
 export const pages = {
     startPage: 'startPage',
-    targetPage: 'targetPage',
+    selectTargetPage: 'selectTargetPage',
+    targetResult: 'targetResult',
 }
