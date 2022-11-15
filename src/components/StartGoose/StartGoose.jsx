@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import Circle from "../UI/Circle/Circle";
 import styles from './StartGoose.module.scss';
 import goose from '../img/startGus.webp';
-import { targetsData } from '../../data/data';
 import Button from "../UI/Button/Button";
+import { DataContext } from "../../providers/DataProvider";
 
 function StartGoose() {
+
+    const targetsData = useContext(DataContext);
 
     const welcome = targetsData.welcomeDialogs[Math.floor(Math.random() * ((targetsData.welcomeDialogs.length - 1) - 0 + 1)) + 0];
 

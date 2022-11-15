@@ -15,8 +15,8 @@ function Goose () {
 
     return (
         <div className={styles.container}>
-            {isLoad ? <LoaderGoose/> : <StartGoose/>}
-            {/* <SelectTarget/> */}
+            {/* {isLoad ? <LoaderGoose/> : <StartGoose/>} */}
+            <SelectTarget/>
             {/* <TargetResult/> */}
         </div>
     );

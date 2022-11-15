@@ -1,8 +1,11 @@
-import { targetsData } from '../../data/data';
 import TargetItem from './TargetItem/TargetItem';
 import TargetWindow from '../UI/TargetWindow/TargetWindow';
+import { useContext } from 'react';
+import { DataContext } from '../../providers/DataProvider';
 
 function SelectTarget() {
+
+    const targetsData = useContext(DataContext);
 
     const { headerText, descriptionText, button } = targetsData.selectTarget;
     const { targets } = targetsData;
