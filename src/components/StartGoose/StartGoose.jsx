@@ -4,12 +4,18 @@ import styles from './StartGoose.module.scss';
 import goose from '../img/startGus.webp';
 import Button from "../UI/Button/Button";
 import { DataContext } from "../../providers/DataProvider";
+import { PageContext } from "../../providers/PageProvider";
 
 function StartGoose() {
 
     const targetsData = useContext(DataContext);
+    const { setPage } = useContext(PageContext);
 
     const welcome = targetsData.welcomeDialogs[Math.floor(Math.random() * ((targetsData.welcomeDialogs.length - 1) - 0 + 1)) + 0];
+
+    const btnClick = () => {
+        setPage(targetsData.pages.selectTargetPage)
+    }
 
     return(
         <div className={styles.container}>
@@ -24,8 +30,7 @@ function StartGoose() {
                 </div>
             </div>
             {/* <button className={styles.button_start}>Обрати позицію</button> */}
-            <Button className={styles.button_start}>Обрати позицію</Button>
-            
+            <Button hendlerClick={btnClick} className={styles.button_start}>Обрати позицію</Button>
         </div>
     );
 }

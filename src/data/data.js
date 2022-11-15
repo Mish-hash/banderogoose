@@ -58,6 +58,7 @@ export const targetsData = {
     pages: {
         startPage: 'startPage',
         selectTargetPage: 'selectTargetPage',
-        targetResult: 'targetResult',
+        targetResultPage: 'targetResultPage',
+        historyPage: 'historyPage',
     },
 };
