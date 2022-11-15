@@ -2,12 +2,12 @@ import React from "react";
 import Circle from "../UI/Circle/Circle";
 import styles from './StartGoose.module.scss';
 import goose from '../img/startGus.webp';
-import { welcomeDialogTexts } from '../../data/data';
+import { targetsData } from '../../data/data';
 import Button from "../UI/Button/Button";
 
 function StartGoose() {
 
-    const welcome = welcomeDialogTexts[Math.floor(Math.random() * ((welcomeDialogTexts.length - 1) - 0 + 1)) + 0];
+    const welcome = targetsData.welcomeDialogs[Math.floor(Math.random() * ((targetsData.welcomeDialogs.length - 1) - 0 + 1)) + 0];
 
     return(
         <div className={styles.container}>

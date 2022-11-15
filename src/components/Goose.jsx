@@ -4,18 +4,20 @@ import LoaderGoose from './LoaderGoose/LoaderGoose';
 import StartGoose from './StartGoose/StartGoose';
 import SelectTarget from './SelectTarget/SelectTarget';
 import TargetResult from './TargetResult/TargetResult';
+import { pages } from '../data/data';
 
 function Goose () {
     const [isLoad, setIsLoad] = useState(true);
+
 
     setTimeout(()=>{setIsLoad(false)}, 1500)
 
 
     return (
         <div className={styles.container}>
-            {/* {isLoad ? <LoaderGoose/> : <StartGoose/>} */}
+            {isLoad ? <LoaderGoose/> : <StartGoose/>}
             {/* <SelectTarget/> */}
-            <TargetResult/>
+            {/* <TargetResult/> */}
         </div>
     );
 }

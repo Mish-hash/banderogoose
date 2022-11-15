@@ -1,20 +1,23 @@
-import {selectTargetData} from '../../data/data';
+import { targetsData } from '../../data/data';
 import TargetItem from './TargetItem/TargetItem';
 import TargetWindow from '../UI/TargetWindow/TargetWindow';
 
 function SelectTarget() {
 
-    const targets = selectTargetData.targets.map(el => (
+    const { headerText, descriptionText, button } = targetsData.selectTarget;
+    const { targets } = targetsData;
+
+    const targetsItems = targets.map(el => (
         <TargetItem key={`${el.name}_${el.id.toString()}`} data={el}/>
     ));
 
     return(
         <TargetWindow
-            headerText={selectTargetData.headerText}
-            descriptionText={selectTargetData.descriptionText}
-            buttonText={selectTargetData.button}
+            headerText={headerText}
+            descriptionText={descriptionText}
+            buttonText={button}
         >
-            {targets}
+            {targetsItems}
         </TargetWindow>
     );
 }

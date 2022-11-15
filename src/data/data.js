@@ -8,76 +8,56 @@ import warChrik from '../components/img/war/chrik_war.webp';
 import warMackwa from '../components/img/war/mackwa_war.webp';
 import warRubl from '../components/img/war/rubl_war.webp';
 
-
-export const welcomeDialogTexts = [
-    'Усі системи мегаактивовані. Очікую на команду!',
-    'Готовий фарширувати!',
-    'У запасі є ракети – з орків смажити котлети',
-];
-
-export const selectTargetData = {
-    headerText: 'Оберіть одну з чотирьох позицій',
-    descriptionText: 'Гусак атакує обрану позицію зброєю високоточного влучання',
+export const targetsData = {
+    welcomeDialogs: [
+        'Усі системи мегаактивовані. Очікую на команду!',
+        'Готовий фарширувати!',
+        'У запасі є ракети – з орків смажити котлети',
+    ],
+    selectTarget: {
+        headerText: 'Оберіть одну з чотирьох позицій',
+        descriptionText: 'Гусак атакує обрану позицію зброєю високоточного влучання',
+        button: 'Запустити гуся',
+    },
+    targetResult: {
+        headerText: 'Слава Україні',
+        descriptionText: 'Ваш гусак успішно запущений',
+        button: 'Переглянути карту',
+        text: 'Очікуйте гучного «свєрх-тратата» по позиції найближчим часом',
+    },
     targets: [
         {
             id: 1,
             name: 'moscov',
             text: 'На мацкву',
-            img: mackwaIcon,
+            icon: mackwaIcon,
+            imgWar: warMackwa,
         },
         {
             id: 2,
             name: 'bunker',
             text: 'На бункер',
-            img: bunkerIcon,
+            icon: bunkerIcon,
+            imgWar: warBunker,
         },
         {
             id: 3,
             name: 'lukashenko',
             text: 'На чик-чирика',
-            img: chrikIcon,
+            icon: chrikIcon,
+            imgWar: warChrik,
         },
         {
             id: 4,
             name: 'rur',
             text: 'На курс рубля',
-            img: rublIcon,
+            icon: rublIcon,
+            imgWar: warRubl,
         },
     ],
-    button: 'Запустити гуся',
+    pages: {
+        startPage: 'startPage',
+        selectTargetPage: 'selectTargetPage',
+        targetResult: 'targetResult',
+    },
 };
-
-export const targetResultData = {
-    headerText: 'Слава Україні',
-    descriptionText: 'Ваш гусак успішно запущений',
-    button: 'Переглянути карту',
-    targets: [
-        {
-            id: 1,
-            name: 'moscov',
-            img: warMackwa,
-        },
-        {
-            id: 2,
-            name: 'bunker',
-            img: warBunker,
-        },
-        {
-            id: 3,
-            name: 'lukashenko',
-            img: warChrik,
-        },
-        {
-            id: 4,
-            name: 'rur',
-            img: warRubl,
-        },
-    ],
-    text: 'Очікуйте гучного «свєрх-тратата» по позиції найближчим часом',
-}
-
-export const pages = {
-    startPage: 'startPage',
-    selectTargetPage: 'selectTargetPage',
-    targetResult: 'targetResult',
-}

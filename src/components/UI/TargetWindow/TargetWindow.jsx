@@ -5,7 +5,6 @@ import Button from '../Button/Button';
 function TargetWindow(props) {
 
     const { headerText, descriptionText, buttonText } = props;
-    console.log(props);
 
     return(
         <div className={styles.container}>

@@ -2,10 +2,10 @@ import styles from './ResultTarget.module.scss';
 
 function ResultTarget(props) {
 
-    const {img, name} = props.data;
+    const {imgWar, name} = props.data;
     return(
         <div className={styles.container}>
-            <img className={styles.image} src={img} alt={name}/>
+            <img className={styles.image} src={imgWar} alt={name}/>
             <p>{props.text}</p>
         </div>
     );
