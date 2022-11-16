@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/banderogoose/static/css/main.8961489c.css",
-    "main.js": "/banderogoose/static/js/main.d989c418.js",
+    "main.css": "/banderogoose/static/css/main.5ddffdc9.css",
+    "main.js": "/banderogoose/static/js/main.3f23750f.js",
     "static/js/787.ddb0fc3e.chunk.js": "/banderogoose/static/js/787.ddb0fc3e.chunk.js",
+    "static/media/gus_fly.webp": "/banderogoose/static/media/gus_fly.3eb87e25ebdd9526db82.webp",
     "static/media/chrik_war.webp": "/banderogoose/static/media/chrik_war.86b609ccbdf450a743d4.webp",
     "static/media/mackwa_war.webp": "/banderogoose/static/media/mackwa_war.41a1074556f54c31faf6.webp",
     "static/media/rubl_war.webp": "/banderogoose/static/media/rubl_war.7cdabe90c9e0bd7ee6a5.webp",
@@ -17,12 +18,12 @@
     "static/media/vector1112.webp": "/banderogoose/static/media/vector1112.193a52ec8a349ae93816.webp",
     "index.html": "/banderogoose/index.html",
     "static/media/close.webp": "/banderogoose/static/media/close.3ba14b415ff696cc97bd.webp",
-    "main.8961489c.css.map": "/banderogoose/static/css/main.8961489c.css.map",
-    "main.d989c418.js.map": "/banderogoose/static/js/main.d989c418.js.map",
+    "main.5ddffdc9.css.map": "/banderogoose/static/css/main.5ddffdc9.css.map",
+    "main.3f23750f.js.map": "/banderogoose/static/js/main.3f23750f.js.map",
     "787.ddb0fc3e.chunk.js.map": "/banderogoose/static/js/787.ddb0fc3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8961489c.css",
-    "static/js/main.d989c418.js"
+    "static/css/main.5ddffdc9.css",
+    "static/js/main.3f23750f.js"
   ]
 }
