@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/banderogoose/static/css/main.6d0990a3.css",
-    "main.js": "/banderogoose/static/js/main.4ef2fd36.js",
+    "main.css": "/banderogoose/static/css/main.8961489c.css",
+    "main.js": "/banderogoose/static/js/main.d989c418.js",
     "static/js/787.ddb0fc3e.chunk.js": "/banderogoose/static/js/787.ddb0fc3e.chunk.js",
     "static/media/chrik_war.webp": "/banderogoose/static/media/chrik_war.86b609ccbdf450a743d4.webp",
     "static/media/mackwa_war.webp": "/banderogoose/static/media/mackwa_war.41a1074556f54c31faf6.webp",
@@ -17,12 +17,12 @@
     "static/media/vector1112.webp": "/banderogoose/static/media/vector1112.193a52ec8a349ae93816.webp",
     "index.html": "/banderogoose/index.html",
     "static/media/close.webp": "/banderogoose/static/media/close.3ba14b415ff696cc97bd.webp",
-    "main.6d0990a3.css.map": "/banderogoose/static/css/main.6d0990a3.css.map",
-    "main.4ef2fd36.js.map": "/banderogoose/static/js/main.4ef2fd36.js.map",
+    "main.8961489c.css.map": "/banderogoose/static/css/main.8961489c.css.map",
+    "main.d989c418.js.map": "/banderogoose/static/js/main.d989c418.js.map",
     "787.ddb0fc3e.chunk.js.map": "/banderogoose/static/js/787.ddb0fc3e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6d0990a3.css",
-    "static/js/main.4ef2fd36.js"
+    "static/css/main.8961489c.css",
+    "static/js/main.d989c418.js"
   ]
 }
