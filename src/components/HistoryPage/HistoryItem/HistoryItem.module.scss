@@ -1,0 +1,44 @@
+.container {
+    width: 336px;
+    height: 67px;
+    background: #FFFFFF;
+    border-radius: 16px;
+    margin-bottom: 14px;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+
+    .text {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+
+        .date {
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            font-size: 10px;
+            line-height: 18px;
+
+            p {
+                margin-top: 13px;
+            }
+        }
+
+        .label {
+            text-align: start;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    .icon {
+        margin: 12px;
+        img {
+            width: 43px;
+            height: 43px;
+        }
+    }
+}

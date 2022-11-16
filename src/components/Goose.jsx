@@ -5,6 +5,7 @@ import TargetResult from './TargetResult/TargetResult';
 import { PageContext } from '../providers/PageProvider';
 import { DataContext } from '../providers/DataProvider';
 import StartPage from './StartPage/StartPage';
+import HistoryPage from './HistoryPage/HistoryPage';
 
 function Goose () {
 
@@ -22,6 +23,9 @@ function Goose () {
             break;
         case pages.targetResultPage:
             curentPage = <TargetResult/>;
+            break;
+        case pages.historyPage:
+            curentPage = <HistoryPage/>;
             break;
         default:
             curentPage= <h1>Error. Component not found!!!</h1>

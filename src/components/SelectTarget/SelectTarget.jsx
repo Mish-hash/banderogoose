@@ -6,6 +6,10 @@ import { TargetContext } from '../../providers/TargetPrivider';
 import { PageContext } from '../../providers/PageProvider';
 import gus_fly from '../img/gus_fly.webp';
 import styles from './SelectTarget.module.scss';
+import { HistoryContext } from '../../providers/HistoryProvider';
+import moment from 'moment';
+import 'moment/locale/uk';
+moment.locale('uk');
 
 function SelectTarget() {
 
@@ -13,6 +17,7 @@ function SelectTarget() {
     const {targetId, setTargetId} = useContext(TargetContext);
     const {setPage} = useContext(PageContext);
     const [boom, setBoom] = useState(false);
+    const {history, setHistory} = useContext(HistoryContext);
 
     const { headerText, descriptionText, button } = targetsData.selectTarget;
     const { targets } = targetsData;
@@ -20,11 +25,19 @@ function SelectTarget() {
     const hendlerTrgetClick = (id) => {
         setTargetId(id);
     };
+
     const hendlerBtnClick = () => {
+
         setBoom(true);
         setTimeout(()=>{
             setPage(targetsData.pages.targetResultPage);
         }, 1300);
+        setHistory([...history, {
+            id: Date.now(),
+            time: moment().format('H:mm'),
+            date: moment().format('D MMMM YYYY'),
+            targetId,
+        }]);
     }
 
     const targetsItems = targets.map(el => (
