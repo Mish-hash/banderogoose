@@ -29,7 +29,7 @@ function StartGoose() {
                     <p>{welcome}</p>
                 </div>
             </div>
-            <Button disabled={false} hendlerClick={btnClick} className={styles.button_start}>Обрати позицію</Button>
+            <Button hendlerClick={btnClick} className={styles.button_start}>Обрати позицію</Button>
         </div>
     );
 }

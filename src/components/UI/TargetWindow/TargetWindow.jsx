@@ -24,7 +24,7 @@ function TargetWindow(props) {
             <div className={styles.targets}>
                 {props.children}
             </div>
-            <Button className={styles.button}>{buttonText}</Button>
+            <Button hendlerClick={props.btnClick} disabled={props.btnDisable} className={styles.button}>{buttonText}</Button>
         </div>
     );
 }
