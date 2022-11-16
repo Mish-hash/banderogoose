@@ -1,12 +1,13 @@
 import TargetItem from './TargetItem/TargetItem';
 import TargetWindow from '../UI/TargetWindow/TargetWindow';
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { DataContext } from '../../providers/DataProvider';
+import { TargetContext } from '../../providers/TargetPrivider';
 
 function SelectTarget() {
 
     const targetsData = useContext(DataContext);
-    const [targetId, setTargetId] = useState(null);
+    const {targetId, setTargetId} = useContext(TargetContext);
 
     const { headerText, descriptionText, button } = targetsData.selectTarget;
     const { targets } = targetsData;
