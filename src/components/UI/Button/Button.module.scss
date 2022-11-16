@@ -1,7 +1,7 @@
 .button {
     width: 311px;
     height: 52px;
-    background-color: #007AFF;
+    background-color: rgba(0, 122, 255, 1);
     border: none;
     border-radius: 14px;
     font-family: 'Roboto';
@@ -11,4 +11,9 @@
     line-height: 24px;
     color: #FFFFFF;
     cursor: pointer;
+}
+
+.disabled {
+    cursor: default;
+    background-color: rgba(0, 122, 255, 0.5);
 }
