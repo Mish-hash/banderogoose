@@ -1,0 +1,22 @@
+.image {
+    width: 375px;
+    height: 176px;
+    position: fixed;
+    bottom: -10000px;
+}
+
+.boom {
+    animation-name: boom;
+    animation-duration: 1200ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+}
+
+@keyframes boom {
+    from {
+        bottom: -400px;
+    }
+    to {
+        bottom: 1000px;
+    }
+}

@@ -24,7 +24,7 @@ function Goose () {
             curentPage = <TargetResult/>;
             break;
         default:
-            curentPage= <h3>Error</h3>
+            curentPage= <h1>Error. Component not found!!!</h1>
     }
 
 

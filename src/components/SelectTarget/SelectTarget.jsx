@@ -1,15 +1,18 @@
 import TargetItem from './TargetItem/TargetItem';
 import TargetWindow from '../UI/TargetWindow/TargetWindow';
-import { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { DataContext } from '../../providers/DataProvider';
 import { TargetContext } from '../../providers/TargetPrivider';
 import { PageContext } from '../../providers/PageProvider';
+import gus_fly from '../img/gus_fly.webp';
+import styles from './SelectTarget.module.scss';
 
 function SelectTarget() {
 
     const targetsData = useContext(DataContext);
     const {targetId, setTargetId} = useContext(TargetContext);
     const {setPage} = useContext(PageContext);
+    const [boom, setBoom] = useState(false);
 
     const { headerText, descriptionText, button } = targetsData.selectTarget;
     const { targets } = targetsData;
@@ -18,7 +21,10 @@ function SelectTarget() {
         setTargetId(id);
     };
     const hendlerBtnClick = () => {
-        setPage(targetsData.pages.targetResultPage);
+        setBoom(true);
+        setTimeout(()=>{
+            setPage(targetsData.pages.targetResultPage);
+        }, 1300);
     }
 
     const targetsItems = targets.map(el => (
@@ -31,15 +37,18 @@ function SelectTarget() {
     ));
 
     return(
-        <TargetWindow
-            headerText={headerText}
-            descriptionText={descriptionText}
-            buttonText={button}
-            btnDisable={(targetId === null) ? true : false}
-            btnClick={hendlerBtnClick}
-        >
-            {targetsItems}
-        </TargetWindow>
+        <React.Fragment>
+            <TargetWindow
+                headerText={headerText}
+                descriptionText={descriptionText}
+                buttonText={button}
+                btnDisable={(targetId === null) ? true : false}
+                btnClick={hendlerBtnClick}
+            >
+                {targetsItems}
+            </TargetWindow>
+            <img className={`${styles.image} ${boom && styles.boom}`} src={gus_fly} alt="gus_fly"/>
+        </React.Fragment>
     );
 }
 
