@@ -4,16 +4,19 @@ import Button from '../Button/Button';
 import { useContext } from 'react';
 import { PageContext } from '../../../providers/PageProvider';
 import { DataContext } from '../../../providers/DataProvider';
+import { TargetContext } from '../../../providers/TargetPrivider';
 
 function TargetWindow(props) {
 
     const { pages } = useContext(DataContext);
     const { setPage } = useContext(PageContext);
+    const {setTargetId} = useContext(TargetContext);
 
     const { headerText, descriptionText, buttonText } = props;
 
     const onCloseClick = () => {
-        setPage(pages.startPage)
+        setPage(pages.startPage);
+        setTargetId(null);
     };
 
     return(

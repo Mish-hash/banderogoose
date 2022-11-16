@@ -20,7 +20,7 @@ function Goose () {
         case pages.selectTargetPage:
             curentPage = <SelectTarget/>;
             break;
-        case pages.TargetResult:
+        case pages.targetResultPage:
             curentPage = <TargetResult/>;
             break;
         default:
